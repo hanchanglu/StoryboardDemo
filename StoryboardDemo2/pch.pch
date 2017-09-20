@@ -1,0 +1,36 @@
+//
+//  pch.pch
+//  StoryboardDemo2
+//
+//  Created by 候志伟 on 2017/9/20.
+//  Copyright © 2017年 bocweb. All rights reserved.
+//
+
+#ifndef pch_pch
+#define pch_pch
+
+#import "UINavigationController+FDFullscreenPopGesture.h"
+
+// 2.获得RGB颜色
+
+#define RGBAColor(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+#define RGBColor(r, g, b) RGBAColor(r,g,b,1.0)
+
+#define kGlobalBg RGBColor(245, 245, 245)
+#define kGlobalTintColor RGBColor(76, 160, 252)
+#define kGlobalDividerColor RGBColor(220, 220, 220)
+#define kGlobalCellSelectedBg RGBAColor(237, 233, 218, 0.2)
+#define KGlobalMainColor RGBColor(22, 174, 49)
+#define SCALE kUIScreenHeight/667
+// 随机色
+#define RandomColor RGBColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+
+//定义高度
+#define kUIScreenSize [UIScreen mainScreen].bounds.size
+#define kUIScreenWidth kUIScreenSize.width
+#define kUIScreenHeight kUIScreenSize.height
+
+#define kNavigationBarHeight 64
+#define kTabbarHeight 49
+
+#endif /* pch_pch */
